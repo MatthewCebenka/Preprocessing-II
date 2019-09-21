@@ -1,1 +1,36 @@
 // Navigation Styles here
+
+
+.header-container{
+    width: 100%;
+    margin: 0% auto;
+    border-bottom: 2px dashed black;
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+
+    @media @mobile{
+        .nav{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            text-align: center;
+        }
+        .nav h1{
+            font-size: 3rem;
+        }
+    }
+
+    .nav a{
+        font-size: 2rem;
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
+}
